@@ -1,0 +1,157 @@
+.main {
+    min-height: 450px;
+    padding: 20px 40px 0 40px;
+}
+
+.basket-block {
+    display: flex;
+    margin-bottom: 136px;
+}
+
+.order-block {
+    width: 55%;
+    padding-right: 32px;
+}
+
+.delivery-data-block {
+    width: 45%;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+/* ----- ORDER ----- */
+
+.order-text {
+    color: #2D3F2F;
+    font-family: 'Cakra-Normal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 84px;
+    margin-bottom: 40px;
+}
+
+.order-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.order-desc {
+    float: left;
+    width: 90%;
+}
+
+
+table {
+    width: 100%;
+}
+
+td {
+    border: 2px solid #2D3F2F;
+    vertical-align: top;
+}
+
+.img-column {
+    width: 10%;
+}
+
+.order-img {
+    width: 107px;
+    height: 107px;
+    padding: 4px;
+}
+
+.desc-column {
+    padding: 25px 25px 0 11px;
+}
+
+.order-item-title {
+    color: #2D3F2F;
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.order-item-quantity {
+    color: #2D3F2F;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.btn-minus,.btn-add {
+    all: unset;
+}
+
+.order-item-price {
+    color: #2D3F2F;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.remove-order {
+    float: right;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn {
+    all: unset;
+}
+
+/* ----- DELIVERY DATA ----- */
+
+.delivery-data-text {
+    color: #2D3F2F;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    padding-top: 15px;
+    margin-bottom: 56px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #2D3F2F;
+    border-radius: 3px;
+
+    color: rgba(49, 49, 49, 0.7);
+    background-color: #FFEFCD;
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.street-house-number-fields {
+    overflow: hidden;
+
+}
+
+#street {
+    float: left;
+    width: 63%;
+}
+
+#houseNumber {
+    float: right;
+    width: 32%;
+}
+
+/* ----- PAYMENT ----- */
