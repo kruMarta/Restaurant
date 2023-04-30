@@ -66,6 +66,7 @@
 }
 
 .product-btn {
+    all: unset;
     width: 393px;
     height: auto;
     padding: 12px;

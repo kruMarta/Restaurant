@@ -15,7 +15,7 @@ fetch('../products.json')
         products.forEach(product => {
             const productHTML = `
                         <div class="product-container">
-                            <a href="">
+                            <a href="../pages/menu-item.html?prod_id=${product.id}">
                                 <div class="product-img">
                                     <img src="${product.image}" alt="${product.name}">
                                 </div>
@@ -24,10 +24,10 @@ fetch('../products.json')
                                 <div class="col-8 text-start"><span class="product-title">${product.name}</span></div>
                                 <div class="col-4 text-end"><span class="product-price">${product.price} ₴</span></div>
                             </div>
-                            <div class="product-btn text-center">
+                            <button class="product-btn text-center" onclick="setProduct(${product.id});">
                                 <span class="product-btn-text">добавити в корзину </span>
                                 <img src="../images/menu/long-arrow.svg" alt="longArrow">
-                            </div>
+                            </button>
                         </div>
             `;
 

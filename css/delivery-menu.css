@@ -175,6 +175,7 @@
 }
 
 .product-btn {
+    all: unset;
     width: 281px;
     padding: 5px;
     background-color: #E59500;
