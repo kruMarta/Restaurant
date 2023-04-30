@@ -137,6 +137,16 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="total-price">
+                        <div class="total-price-text">
+                            Разом
+                        </div>
+                        <div class="total-price-value">
+                            500 ₴
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -168,6 +178,30 @@
                 </div>
 
             </div>
+        </div>
+
+        <div class="row payment-block">
+            <div class="payment-text">
+                Спосіб оплати
+            </div>
+
+            <div class="payment-type-container">
+                <input class="radio-btn" id="cash" type="radio" name="r" value="1" checked>
+                <label class="radio-text" for="cash">готівкою</label>
+
+                <input class="radio-btn" id="online" type="radio" name="r" value="2">
+                <label class="radio-text" for="online">онлайн</label>
+            </div>
+
+            <div class="rest">
+                <label for="rest"></label>
+                <input class="input-field" type="text" id="rest" name="rest" placeholder="Підготувати решту з...">
+
+                <button class="submit-btn">
+                    підтвердити доставку
+                </button>
+            </div>
+
         </div>
     </form>
 
@@ -239,7 +273,7 @@
 <!-- Підключення скриптів Bootstrap -->
 <script src="../js/bootstrap.bundle.min.js"></script>
 
-<!--<script src="../js/menu-js/dao.js"></script>-->
+<!--<script src="../js/menu-js/left-offset-total-price.js"></script>-->
 
 </body>
 </html>
