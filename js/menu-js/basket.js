@@ -1,37 +1,23 @@
-const mapOrder = new Set();
-const orders = new Map();
+// check if orders exist in session storage
+const orders = new Map(JSON.parse(sessionStorage.getItem('orders')));
 
-function setProduct(id) {
-    mapOrder.set(id)
-}
+console.log(orders)
 
-fetch('../products.json')
-    .then(response => response.json())
-    .then(data => {
-        const products = data.products;
-    // .find(product => parseInt(product.id) === parseInt(id))
+async function setProduct(id) {
+    const response = await fetch('../products.json');
+    const data = await response.json();
+    const product = data.products.find(product => parseInt(product.id) === parseInt(id));
 
-
-        mapOrder.forEach((id) => {
-            products.forEach(product => {
-                if (parseInt(product.id) === id) {
-                    orders.set(product, 1);
-                }
-            });
-        });
-
-    });
-
-function incQ(product) {
-    if (mapOrder.get(product).key <= 30) {
-        mapOrder.get(product).key++
+    if (!orders.has(product.id)) {
+        orders.set(product.id, {product: product, quantity: 1});
+    } else {
+        const currentQuantity = orders.get(product.id).quantity;
+        orders.set(product.id, {product: product, quantity: currentQuantity + 1});
     }
-}
 
-function decQ(product) {
-    if (mapOrder.get(product).key >= 1) {
-        mapOrder.get(product).key--
-    }
-}
+    console.log("here " + id);
+    console.log(orders);
 
+    localStorage.setItem('orders', JSON.stringify(Array.from(orders.entries())));
+}
 

@@ -1,10 +1,20 @@
 const orderContainer = document.querySelector('.orders');
 const totalPriceContainer = document.querySelector('.total-price');
 
+// Отримати дані з локального сховища
+const orders = new Map(JSON.parse(localStorage.getItem('orders')));
+
 let totalPrice = 0;
 
+
+console.log(orders)
+
 window.onload = () => {
-    orders.forEach((quantity, product) => {
+    orders.forEach((entry) => {
+
+        const product = entry.product
+        const quantity = entry.quantity
+
         const orderHTML = `
                 <div class="row order-item">
                     
@@ -61,5 +71,17 @@ window.onload = () => {
         </div>
     `);
 
-    console.log(orders)
+}
+
+
+function incQ(product) {
+    if (orders.get(product).key <= 30) {
+        orders.get(product).key++;
+    }
+}
+
+function decQ(product) {
+    if (orders.get(product).key >= 1) {
+        orders.get(product).key--;
+    }
 }
