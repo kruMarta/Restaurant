@@ -1,0 +1,346 @@
+@font-face{
+    font-family: "Ruberoid-Regular";
+    src: url("../fonts/Ruberoid-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Cakra-Normal";
+    src: url("../fonts/Cakra-Normal.otf") format("opentype");
+}
+
+:root {
+    --mainWheat: #FFEFCD;
+    --customOrange:#E59500;
+    --darkGreen: #2D3F2F;
+    --redishOrange: #E55200;
+}
+
+.navbar {
+    z-index: 55;
+}
+
+.back-img {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+.logo {
+    z-index: 55;
+    position: absolute;
+    width: 797px;
+    height: 343px;
+    align-self: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.first-block{
+   display: flex;
+   height: 770px;
+}
+
+.nav-item a {
+    color: var(--mainWheat);
+    font-family: "Ruberoid-Regular";
+    font-size: 16px;
+    line-height: 21.49px;
+}
+
+.nav-item a:hover{
+    text-decoration: underline;
+}
+
+.nav-item a:visited{
+    color: var(--mainWheat);
+}
+
+.arrow-down{
+    position: absolute;
+    z-index: 55;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.reservation {
+    background-color: var(--mainWheat);
+    height: 1600px;
+}
+
+.header {
+    font-family: "Cakra-Normal";
+    font-size: 60px;
+    line-height: 84px;
+    color: var(--darkGreen);
+    padding-top: 85px;
+}
+
+#reserv-pic {
+    position: absolute;
+    right: 5%;
+}
+
+.appointment {
+    background-color: transparent;
+    border: 2px solid var(--darkGreen);
+    height: 75px;
+    line-height: 75px; 
+    padding: 10px;
+    font-family: "Ruberoid-Regular";
+    font-size: 24px;
+    padding-top: calc((25px - 24px) / 2) !important;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/Vector\ down.svg"); 
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    cursor:pointer;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/Vector\ down.svg"); 
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    cursor:pointer;
+}
+
+#amount-of-clients {
+    width: 665px;
+}
+
+.date {
+    width: 665px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-index {
+    padding-top: calc((45px - 24px) / 2) !important;
+}
+
+.date input{
+    width: 317px;
+}
+
+.reservation button {
+    width: 232px;
+    height: 65px;
+    background-color: transparent;
+    border: 2px solid var(--redishOrange);
+    color: var(--redishOrange);
+    font-size: 24px;
+    font-family: "Ruberoid-Regular";
+    margin-top: 50px;
+    position: absolute;
+    left: 17%;
+}
+
+.simple-text {
+    font-family: "Ruberoid-Regular";
+    font-size: 22px;
+    color: var(--darkGreen);
+}
+
+.indicators {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.indicators img {
+    padding-left: 40px;
+}
+
+.arrangement img{
+    cursor: pointer;
+}
+
+.table-3 {
+    margin-left: 60px;
+    padding-right: 0;
+}
+
+.table-7{
+    margin-left: 70px;
+}
+
+.table-8 {
+    margin-left: 30px;
+}
+
+.table-9 {
+    padding-top: 100px;
+}
+
+.table-10 {
+    transform: translateY(-40px);
+}
+
+.row {
+    height: 250px;
+}
+
+.table-12 {
+    margin-left: 250px;
+}
+
+.table-13 {
+    margin-top: 50px;
+    margin-right: 480px;
+}
+
+.last-block {
+    height: 1250px;
+    background-color: var(--mainWheat);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ellipse {
+    background-color: var(--darkGreen);
+    height: 1483px;
+    width: 100%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+}
+
+.ellipse-header {
+    font-family: "Cakra-Normal";
+    font-size: 40px;
+    color: var(--mainWheat);
+    text-align: center;
+    padding-top: 150px;
+}
+
+.ellipse input {
+    width:  665px;
+    height: 75px;
+    margin: auto;
+    background-color: transparent;
+    border: 2px solid var(--mainWheat);
+    font-family: "Ruberoid-Regular";
+    font-size: 24px;
+    color: var(--mainWheat);
+}
+
+.ellipse input::placeholder {
+    color: var(--mainWheat);
+    padding-left: 25px;
+}
+
+.ellipse input:focus{
+    outline: none;
+    border: 2px solid var(--mainWheat);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    margin-top: 70px;
+}
+
+.gift {
+    position: relative;
+}
+
+.ellipse button {
+    width: 232px;
+    height: 65px;
+    background-color: transparent;
+    border: 2px solid var(--customOrange);
+    color: var(--mainWheat);
+    font-size: 24px;
+    font-family: "Ruberoid-Regular";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#gift-text {
+    font-family: "Ruberoid-Regular";
+    font-size: 28px;
+    color: var(--mainWheat);
+}
+
+#img-1 {
+    position: absolute;
+    right: 30%;
+    top: 35%;
+}
+
+#rec-1 {
+    position: absolute;
+    right: 35%;
+    top: 40%;
+}
+
+#img-2 {
+    position: absolute;
+    right: 10%;
+    top: 55%;
+    z-index: 5;
+}
+
+#rec-2 {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    z-index: 1;
+}
+
+footer{
+    background-color: var(--darkGreen);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logotype {
+    width: 240px;
+    height: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--mainWheat);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--customOrange);
+}
+
+footer * {
+    padding-top: 3%;
+    color: var(--mainWheat);
+    font-size: 18px;
+}
+
+.contact-info li{
+    display: flex;
+    align-items: center;
+}
