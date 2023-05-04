@@ -75,6 +75,7 @@
 
 }
 .product-btn-text {
+    all: unset;
     color: #313131;
     font-family: 'Ruberoid-Regular', sans-serif;
     font-weight: 400;

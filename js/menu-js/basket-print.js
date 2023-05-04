@@ -1,15 +1,26 @@
+const basketContainer = document.querySelector('.basket-block');
 const orderContainer = document.querySelector('.orders');
 const totalPriceContainer = document.querySelector('.total-price');
 
 // Отримати дані з локального сховища
-const orders = new Map(JSON.parse(localStorage.getItem('orders')));
+let ordersList = new Map(JSON.parse(localStorage.getItem('orders')));
 
-let totalPrice = 0;
+if (ordersList) {
+    printProducts(ordersList);
+} else {
+    console.log("empty")
+}
+console.log(ordersList)
 
 
-console.log(orders)
 
-window.onload = () => {
+function printProducts(orders) {
+
+    console.log(orders)
+    // if (orders.size)
+
+    let totalPrice = 0;
+    orderContainer.innerHTML = '';
     orders.forEach((entry) => {
 
         const product = entry.product
@@ -30,11 +41,11 @@ window.onload = () => {
                                             ${product.name}
                                         </div>
                                         <div class="col-2 order-item-quantity text-center">
-                                            <button class="btn-minus" onclick="decQ();">
+                                            <button class="btn-minus" onclick="decQ(${product.id});">
                                                 -
                                             </button>
                                             <span> ${quantity} </span>
-                                            <button class="btn-add" onclick="incQ();">
+                                            <button class="btn-add" onclick="incQ(${product.id});">
                                                 +
                                             </button>
                                         </div>
@@ -49,7 +60,7 @@ window.onload = () => {
                     </div>
                     
                     <div class="remove-order">
-                        <button class="remove-btn">
+                        <button class="remove-btn" onclick="removeItem(${product.id});">
                             <img src="../images/menu/cancel.svg" alt="cancelOrderItem">
                         </button>
                     </div>
@@ -57,12 +68,15 @@ window.onload = () => {
                 </div>
             `;
 
+
         orderContainer.insertAdjacentHTML('beforeend', orderHTML);
 
-        totalPrice += parseInt(product.price)
+        totalPrice += parseInt(product.price) * quantity
     });
 
-    totalPriceContainer.insertAdjacentHTML('beforeend', `
+    totalPriceContainer.innerHTML = '';
+    if (totalPrice > 0) {
+        totalPriceContainer.insertAdjacentHTML('beforeend', `
         <div class="total-price-text">
             Разом
         </div>
@@ -70,18 +84,28 @@ window.onload = () => {
             ${totalPrice} ₴
         </div>
     `);
-
-}
-
-
-function incQ(product) {
-    if (orders.get(product).key <= 30) {
-        orders.get(product).key++;
     }
 }
 
-function decQ(product) {
-    if (orders.get(product).key >= 1) {
-        orders.get(product).key--;
+function incQ(id) {
+    if (ordersList.get(id).quantity <= 30) {
+        ordersList.get(id).quantity += 1;
+        ordersList.set(id, ordersList.get(id));
     }
+    printProducts(ordersList)
+}
+
+function decQ(id) {
+    if (ordersList.get(id).quantity > 1) {
+        ordersList.get(id).quantity -= 1;
+        ordersList.set(id, ordersList.get(id));
+    }
+    printProducts(ordersList)
+}
+
+function removeItem(id) {
+    ordersList.delete(id);
+    
+    localStorage.setItem('orders', ordersList);
+    printProducts(ordersList)
 }
