@@ -1,5 +1,7 @@
 const productContainer = document.querySelector('.product-main');
+const mobProductContainer = document.querySelector('.mob-product-main');
 const recommendedContainer = document.querySelector('.recommended-products');
+const mobRecommendedContainer = document.querySelector('.mob-recommended-products');
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('prod_id');
 let currentCategory;
@@ -48,6 +50,39 @@ fetch('../products.json')
         currentCategory = product.category;
 
         productContainer.insertAdjacentHTML('beforeend', productHTML);
+
+        mobProductContainer.insertAdjacentHTML('beforeend', `
+        <div class="row prod-block">
+            <div class="big-img-container">
+                <img class="product-big-img" src="${imgName}-big.png" alt="${imgName}">
+            </div>
+            <div class="content-container">
+                <div class="product-title">${product.name}</div>
+                <div class="small-img">
+                    <img class="product-small-img" src="${imgName}-small.png" alt="${imgName}">
+                </div>
+                <div class="weight-container">
+                    <div class="weight">${product.weight} г</div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="product-description">${product.desc}</div>
+            </div>
+            <div class="row buttons text-center">
+                <div class="product-btn">
+                    <button class="product-btn-text" onclick="setProduct(${product.id});">добавити в корзину </button>
+                    <img class="arrow-add-to-basket" src="../images/menu/long-arrow.svg" alt="longArrow">
+                </div>
+                <a href="delivery-menu.html">
+                    <div class="back-to-menu-container">
+                        <span class="back-to-menu-text">
+                            назад до меню
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        `);
     });
 
 fetch('../products.json')
@@ -74,8 +109,8 @@ fetch('../products.json')
             const recommendationItem = `
             <div class="product-container">
                 <a href="">
-                    <div class="product-img">
-                        <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <img class="product-img" src="${item.image}" alt="${item.name}">
                     </div>
                 </a>
                 <div class="row rec-product-desc">
@@ -86,6 +121,24 @@ fetch('../products.json')
             `;
 
             recommendedContainer.insertAdjacentHTML('beforeend', recommendationItem);
+
+
+            if (i < 2) {
+                mobRecommendedContainer.insertAdjacentHTML('beforeend', `
+            <div class="product-container">
+                <a href="">
+                    <div>
+                        <img class="product-img" src="${item.image}" alt="${item.name}">
+                    </div>
+                </a>
+                <div class="rec-product-desc">
+                    <div class="row"><span class="rec-product-title">${item.name}</span></div>
+                    <div class="row"><span class="rec-product-price">${item.price} ₴</span></div>
+                </div>
+            </div>
+            `);
+            }
+
         }
 
         function shuffleArray(array) {
