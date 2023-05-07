@@ -119,32 +119,159 @@
             </div>
         </div>
 
-        <div class="row payment-block">
-            <div class="payment-text">
-                Спосіб оплати
+        <div class="row mob-basket-block">
+            <div class="order-block">
+                <div class="row">
+                    <div class="order-text">
+                        ваше замовлення
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="orders">
+                        <div class="row order-item">
+
+                            <div class="order-desc">
+                                <table>
+                                    <tr>
+                                        <td class="img-column">
+                                            <img class="order-img" src="../images/menu/product/pizza/margarita.png" alt="">
+                                        </td>
+                                        <td class="desc-column">
+                                            <div class="row">
+                                                <div class="col-6 order-item-title">
+                                                    Маргарита
+                                                </div>
+                                                <div class="col-3 order-item-quantity text-center">
+                                                    <button class="btn-minus" onclick="decQ(${product.id});">
+                                                        -
+                                                    </button>
+                                                    <span> 1 </span>
+                                                    <button class="btn-add" onclick="incQ(${product.id});">
+                                                        +
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 order-item-price text-end">
+                                                    190 ₴
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="remove-order">
+                                <button class="remove-btn" onclick="removeItem(${product.id});">
+                                    <img class="remove-img" src="../images/menu/cancel.svg" alt="cancelOrderItem">
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="row order-item">
+
+                            <div class="order-desc">
+                                <table>
+                                    <tr>
+                                        <td class="img-column">
+                                            <img class="order-img" src="../images/menu/product/pizza/bosso.png" alt="">
+                                        </td>
+                                        <td class="desc-column">
+                                            <div class="row">
+                                                <div class="col-6 order-item-title">
+                                                    Боссо
+                                                </div>
+                                                <div class="col-3 order-item-quantity text-center">
+                                                    <button class="btn-minus" onclick="decQ(${product.id});">
+                                                        -
+                                                    </button>
+                                                    <span> 1 </span>
+                                                    <button class="btn-add" onclick="incQ(${product.id});">
+                                                        +
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 order-item-price text-end">
+                                                    240 ₴
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="remove-order">
+                                <button class="remove-btn" onclick="removeItem(${product.id});">
+                                    <img class="remove-img" src="../images/menu/cancel.svg" alt="cancelOrderItem">
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="total-price">
+                        Разом    430 ₴
+                    </div>
+                </div>
             </div>
 
-            <div class="payment-type-container">
-                <input class="radio-btn" id="cash" type="radio" name="r" value="1" checked>
-                <label class="radio-text" for="cash">готівкою</label>
+            <div class="delivery-data-block">
+                <div class="delivery-data-text">
+                    Дані для доставки
+                </div>
 
-                <input class="radio-btn" id="online" type="radio" name="r" value="2">
-                <label class="radio-text" for="online">онлайн</label>
+                <div class="row input-data-form">
+
+                    <label for="name1"></label>
+                    <input class="input-field" type="text" id="name1" name="name" placeholder="Ім’я">
+
+                    <label for="phone1"></label>
+                    <input class="input-field" type="text" id="phone1" name="phone" placeholder="Номер телефону">
+
+                    <label for="city1"></label>
+                    <input class="input-field" type="text" id="city1" name="city" placeholder="Місто">
+
+                    <div class="street-house-number-fields p-0">
+                        <label for="street1"></label>
+                        <input class="input-field" type="text" id="street1" name="street" placeholder="Вулиця">
+
+                        <label for="houseNumber1"></label>
+                        <input class="input-field" type="text" id="houseNumber1" name="houseNumber"
+                               placeholder="№ будинку">
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="rest">
-                <label for="rest"></label>
-                <input class="input-field" type="text" id="rest" name="rest" placeholder="Підготувати решту з...">
-
-                <button class="submit-btn">
-                    підтвердити доставку
-                </button>
-            </div>
-
         </div>
+
+
     </form>
 
 </main>
+<div class="row payment-block">
+    <div class="payment-text">
+        Спосіб оплати
+    </div>
+
+    <div class="payment-type-container">
+        <input class="radio-btn" id="cash" type="radio" name="r" value="1" checked>
+        <label class="radio-text" for="cash">готівкою</label>
+
+        <input class="radio-btn" id="online" type="radio" name="r" value="2">
+        <label class="radio-text" for="online">онлайн</label>
+    </div>
+
+    <div class="rest">
+        <label for="rest"></label>
+        <input class="input-field" type="text" id="rest" name="rest" placeholder="Підготувати решту з...">
+
+        <button class="submit-btn text-center">
+            підтвердити доставку
+        </button>
+    </div>
+
+</div>
 
 <footer class="container-fluid desktop-footer">
     <div class="row footer-row">
