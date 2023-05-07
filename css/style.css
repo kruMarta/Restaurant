@@ -467,13 +467,18 @@ footer * {
     .navbar {
         z-index: 55;
     }
-    .first-block-mob img:nth-child(odd){
+
+    .first-block-mob img:nth-child(1){
         position: absolute;
         padding-top: 80px;
         left: 0;
     }
+
+    .del-mob-btn {
+        right: 10%;
+    }
     
-    .first-block-mob img:nth-child(even){
+    .first-block-mob img:nth-child(2){
         position: absolute;
         right: 0;
         padding-top: 275px;
@@ -491,7 +496,7 @@ footer * {
     .first-block-mob a:last-of-type {
         display: inline;
         position: absolute;
-        left: 50%;
+        right: 194px;
         padding-top: 425px;
     }
 
