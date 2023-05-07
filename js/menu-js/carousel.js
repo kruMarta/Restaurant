@@ -1,18 +1,18 @@
-const prev1 = document.getElementById("left-arrow-1");
-const next1 = document.getElementById("right-arrow-1");
-const prev2 = document.getElementById("left-arrow-2");
-const next2 = document.getElementById("right-arrow-2");
-const prev3 = document.getElementById("left-arrow-3");
-const next3 = document.getElementById("right-arrow-3");
-const prev4 = document.getElementById("left-arrow-4");
-const next4 = document.getElementById("right-arrow-4");
+const prev1 = document.querySelector(".left-arrow-1");
+const next1 = document.querySelector(".right-arrow-1");
+const prev2 = document.querySelector(".left-arrow-2");
+const next2 = document.querySelector(".right-arrow-2");
+const prev3 = document.querySelector(".left-arrow-3");
+const next3 = document.querySelector(".right-arrow-3");
+const prev4 = document.querySelector(".left-arrow-4");
+const next4 = document.querySelector(".right-arrow-4");
 
 const carousel = document.querySelector(".carousel");
 
-const track1 = document.getElementById("track-1");
-const track2 = document.getElementById("track-2");
-const track3 = document.getElementById("track-3");
-const track4 = document.getElementById("track-4");
+const track1 = document.querySelector(".track-1");
+const track2 = document.querySelector(".track-2");
+const track3 = document.querySelector(".track-3");
+const track4 = document.querySelector(".track-4");
 
 let width = carousel.offsetWidth;
 let index = 0;

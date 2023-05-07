@@ -3,13 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     color: #313131;
     font-family: 'Ruberoid-Regular', sans-serif;
     background-color: #FFEFCD;
 }
-
 a {
     color: inherit;
     text-decoration: none;
@@ -17,13 +15,14 @@ a {
 a:hover {
     color: inherit;
 }
-
 ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
+button {
+    all: unset;
+}
 @font-face {
     font-family: 'Ruberoid-Regular';
     src: url("../fonts/Ruberoid-Regular.ttf");
@@ -42,10 +41,14 @@ ul, li {
 }
 
 /* header */
-.header {
+.desktop-header {
+    display: block;
     padding: 42px;
     font-family: 'Ruberoid-Medium', sans-serif;
     font-size: 16px;
+}
+.mobile-header {
+    display: none;
 }
 
 .m-item {
@@ -57,13 +60,20 @@ ul, li {
 }
 
 /* footer */
-.footer {
+.desktop-footer {
+    display: block;
     color: #FFEFCD;
     background-color: #2D3F2F;
 }
+
+.mobile-footer {
+    display: none;
+}
+
 .footer-row {
     padding: 40px 0 40px 0;
 }
+
 .footer-text {
     color: #FFEFCD;
     font-family: 'Ruberoid-Regular', sans-serif;
@@ -76,4 +86,118 @@ ul, li {
 .bold {
     font-family: 'Ruberoid-Medium', sans-serif;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        padding: 30px 10px;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-size: 14px;
+    }
+
+    .overlay {
+        display: none;
+        width: 100%;
+        max-width: 100vw;
+        height: 333px;
+        position: fixed;
+        background-color: #2D3F2F;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .over-top {
+        padding: 40px 15px 10px 15px;
+    }
+
+    .over-menu {
+        padding: 0 0 0 15px;
+        width: 238px;
+        margin: 0 auto;
+    }
+
+    .over-menu-item {
+        margin-bottom: 20px;
+    }
+
+    .m-item {
+        margin: 0;
+        padding: 0;
+        color: #FFEFCDFF;
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    .over-arrow-short {
+        width: 50px;
+    }
+    .over-arrow-long {
+        width: 73px;
+        fill: #FFEFCDFF;
+    }
+
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        height: 180px;
+        background-color: #2D3F2F;
+        padding: 25px 10px;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13px;
+    }
+
+    .mob-img-logo {
+        width: 124px;
+        height: 54px;
+    }
+
+    .footer-row {
+        padding: 0;
+    }
+
+    .footer-text {
+        color: #FFEFCD;
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .mob-c-1 {
+        padding-left: 10px;
+    }
+
+    .mob-c-2 {
+        padding-left: 10px;
+    }
+
+    .mob-c-3 {
+        padding-left: 20px;
+    }
+
+    .mob-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+
 }
