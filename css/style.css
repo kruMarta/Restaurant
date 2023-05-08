@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Ruberoid-Regular';
+    src: url("../fonts/Ruberoid-Regular.ttf");
+}
+@font-face {
+    font-family: 'Ruberoid-Medium';
+    src: url("../fonts/Ruberoid-Medium.ttf");
+}
+@font-face {
+    font-family: 'Cakra-Normal';
+    src: url("../fonts/Cakra-Normal.otf") format("opentype");;
+}
+@font-face {
+    font-family: 'Moot-Jungle-Regular';
+    src: url("../fonts/mootjunglefreeversionregular-mv4rw.ttf") format("truetype");
+}
