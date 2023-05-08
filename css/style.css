@@ -25,10 +25,6 @@
     --redishOrange: #E55200;
 }
 
-html, body {
-    /* overflow-x: hidden; */
-}
-
 .mobile {
     display: none;
 }
@@ -94,8 +90,9 @@ html, body {
     line-height: 21.49px;
 }
 
-.nav-item a:hover{
+.nav-item a:focus, .nav-item a:hover{
     text-decoration: underline;
+    color: #b2a68a !important;
 }
 
 .nav-item a:visited{
