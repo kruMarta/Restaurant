@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Menu</title>
+
+    <!-- Підключення CSS файлу Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/delivery-menu-header-footer.css">
+    <link rel="stylesheet" href="../css/delivery-menu.css">
+
+    <link rel="icon" type="image/png" href="../images/menu/logo.svg">
+</head>
+<body>
+
+<header class="container-fluid desktop-header">
+    <div class="row">
+        <div class="col-3">
+            <span>ua</span>
+        </div>
+        <div class="col-9 d-flex justify-content-end m-0">
+            <span class="m-item"><a href="index.html">про заклад</a></span>
+            <span class="m-item"><a href="#">меню</a></span>
+            <span class="m-item"><a href="delivery-basket.html">корзина<img class="cart" src="../images/menu/cart.svg"
+                                                                            alt="cart"></a></span>
+        </div>
+    </div>
+</header>
+<header class="container-fluid mobile-header">
+    <div class="row">
+        <div class="col-3">
+            <span><img src="../images/menu/mob/mob-lang.svg" alt="lang" class="mob-lang"></span>
+        </div>
+
+        <div class="col-9 d-flex justify-content-end m-0">
+            <button><img src="../images/menu/mob/mob-burger.svg" alt="burger" class="mob-burger"></button>
+        </div>
+    </div>
+    <div class="row overlay m-0">
+        <div class="row over-top m-0">
+            <div class="col-3 m-0">
+                <span><img src="../images/menu/mob/mob-lang-light.svg" alt="lang" class="mob-lang"></span>
+            </div>
+
+            <div class="col-9 d-flex justify-content-end m-0">
+                <button><img src="../images/menu/mob/mob-close.svg" alt="close" class="close"></button>
+            </div>
+        </div>
+        <div class="over-menu">
+            <div class="row m-0 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center justify-content-between w-100 p-0 over-menu-item">
+                    <span class="m-item"><a href="index.html">про заклад</a></span>
+                </div>
+            </div>
+            <div class="row m-0 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center justify-content-between w-100 p-0 over-menu-item">
+                    <span class="m-item"><a href="#">меню</a></span>
+                </div>
+            </div>
+            <div class="row m-0 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center justify-content-between w-100 p-0 over-menu-item">
+                    <span class="m-item"><a href="delivery-basket.html">корзина</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container-fluid">
+
+    <!-- DISHES AND ARROW DOWN -->
+    <div class="head-container">
+        <img class="photo" id="left-dish" src="../images/menu/left_dish.png" alt="leftDish">
+        <img class="photo" id="logotype" src="../images/menu/logotype.svg" alt="logotype">
+        <img class="photo" id="right-dish" src="../images/menu/right_dish.png" alt="rightDish">
+        <button class="btn-arrow slow-scroll-down">
+            <img class="photo" id="circle-arrow-down" src="../images/menu/circle_arrow_down.svg" alt="circleArrowDown">
+        </button>
+    </div>
+
+    <!-- CATEGORY MENU -->
+    <div class="row menu-category">
+        <div class="col-3 m-0">
+            <span id="menu-title"><a href="#">меню</a></span>
+        </div>
+        <div class="col-9 d-flex justify-content-between m-0">
+            <button class="menu-category-item " id="item-pizza">Піца</button>
+            <button class="menu-category-item " id="item-pasta">Паста</button>
+            <button class="menu-category-item " id="item-salad">Салати</button>
+            <button class="menu-category-item " id="item-drink">Напої</button>
+        </div>
+    </div>
+    <div class="mob-menu-category">
+        <div class="row">
+            <span id="mob-menu-title"><a href="#">меню</a></span>
+        </div>
+        <div class="row d-flex justify-content-between m-0">
+            <button class="menu-category-item ">Піца</button>
+            <button class="menu-category-item ">Паста</button>
+            <button class="menu-category-item ">Салати</button>
+            <button class="menu-category-item ">Напої</button>
+        </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="container-fluid under-category-menu pizza-block">
+        <div class="row"><span class="category-name">ПІЦА</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-1">
+                    <img src="../images/menu/arrow-carousel-left.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10">
+                <div class="carousel">
+                    <div class="pizza track-1">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-1">
+                    <img src="../images/menu/arrow-carousel-right.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid under-category-menu mob-pizza-block">
+        <div class="row"><span class="category-name">ПІЦА</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-1">
+                    <img src="../images/menu/mob/left-scroll.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10 p-0">
+                <div class="carousel">
+                    <div class="mob-pizza track-1">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-1">
+                    <img src="../images/menu/mob/right-scroll.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PASTA -->
+    <div class="container-fluid pasta-block">
+        <div class="row"><span class="category-name">ПАСТА</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-2">
+                    <img src="../images/menu/arrow-carousel-left.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10">
+                <div class="carousel">
+                    <div class="pasta track-2">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-2">
+                    <img src="../images/menu/arrow-carousel-right.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mob-pasta-block">
+        <div class="row"><span class="category-name">ПАСТА</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-2">
+                    <img src="../images/menu/mob/left-scroll.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10  p-0">
+                <div class="carousel">
+                    <div class="mob-pasta track-2">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-2">
+                    <img src="../images/menu/mob/right-scroll.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SALAD -->
+    <div class="container-fluid salad-block">
+        <div class="row"><span class="category-name">САЛАТИ</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-3">
+                    <img src="../images/menu/arrow-carousel-left.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10">
+                <div class="carousel">
+                    <div class="salad track-3">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-3">
+                    <img src="../images/menu/arrow-carousel-right.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mob-salad-block">
+        <div class="row"><span class="category-name">САЛАТИ</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-3">
+                    <img src="../images/menu/mob/left-scroll.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10  p-0">
+                <div class="carousel">
+                    <div class="mob-salad track-3">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-3">
+                    <img src="../images/menu/mob/right-scroll.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DRINKS -->
+    <div class="container-fluid drink-block">
+        <div class="row"><span class="category-name">НАПОЇ</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-4">
+                    <img src="../images/menu/arrow-carousel-left.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10">
+                <div class="carousel">
+                    <div class="drink track-4">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-4">
+                    <img src="../images/menu/arrow-carousel-right.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mob-drink-block">
+        <div class="row"><span class="category-name">НАПОЇ</span></div>
+
+        <div class="row container-cards">
+            <div class="col-1 m-auto">
+                <button class="btn-arrow prev left-arrow-4">
+                    <img src="../images/menu/mob/left-scroll.svg" alt="leftArrow">
+                </button>
+            </div>
+
+            <div class="col-10  p-0">
+                <div class="carousel">
+                    <div class="mob-drink track-4">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 m-auto">
+                <button class="btn-arrow next right-arrow-4">
+                    <img src="../images/menu/mob/right-scroll.svg" alt="rightArrow">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LINK TO CART PAGE -->
+    <div class="row text-center redirect-container">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <a href="delivery-basket.html">
+                <span class="redirect-text">ПЕРЕЙТИ ДО КОРЗИНИ</span>
+                <img src="../images/menu/very-long-arrow.svg" alt="longArrow" class="redirect-arrow">
+            </a>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row text-center mob-redirect-container">
+        <a class=" p-0" href="delivery-basket.html">
+            <span class="redirect-text">ПЕРЕЙТИ ДО КОРЗИНИ</span>
+            <img src="../images/menu/very-long-arrow.svg" alt="longArrow" class="redirect-arrow">
+        </a>
+    </div>
+
+</main>
+
+<footer class="container-fluid desktop-footer">
+    <div class="row footer-row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-2">
+            <a href="index.html"><img src="../images/menu/logotype-light.svg" alt=""></a>
+        </div>
+        <div class="col-2 px-5">
+            <ul>
+                <li class="footer-text pb-1">
+                    <a href="index.html">про заклад</a>
+                </li>
+                <li class="footer-text py-1">
+                    <a href="#">меню</a>
+                </li>
+                <li class="footer-text pt-1">
+                    <a href="delivery-basket.html">корзина</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li class="footer-text  pb-1">
+                    <img class="mx-1 pb-1" src="../images/menu/icon-map.svg" alt="icon">
+                    Львів, вул Дорошенка 34
+                </li>
+                <li class="footer-text py-1">
+                    <img class="mx-1 pb-1" src="../images/menu/icon-mail.svg" alt="icon">
+                    saporiditalia@gmail.com
+                </li>
+                <li class="footer-text pt-1">
+                    <img class="mx-1 pb-1" src="../images/menu/icon-phone.svg" alt="icon">
+                    043 4949 303
+                </li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li class="footer-text bold pb-1">
+                    Ми працюємо:
+                </li>
+                <li class="footer-text py-1">
+                    Пн - Сб 9:00 - 23:00
+                </li>
+                <li class="footer-text pt-1">
+                    Нд 10:00 - 21:00
+                </li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li class="footer-text">
+                    © 2023 Sapori d'italia
+                </li>
+                <li class="footer-text py-2">
+                    Усі права захищені
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<footer class="container-fluid mobile-footer">
+    <div class="row footer-row">
+
+        <div class="col-4 mob-c-1">
+            <a href="index.html"><img class="mob-img-logo" src="../images/menu/logotype-light.svg" alt=""></a>
+            <ul>
+                <li class="footer-text">
+                    © 2023 Sapori d'italia
+                </li>
+                <li class="footer-text pt-1">
+                    Усі права захищені
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-2 mob-c-2">
+            <ul>
+                <li class="footer-text">
+                    <a href="index.html">про заклад</a>
+                </li>
+                <li class="footer-text pt-1">
+                    <a href="#">меню</a>
+                </li>
+                <li class="footer-text ">
+                    <a href="delivery-basket.html">забронювати столик</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-6 mob-c-3">
+            <ul>
+                <li class="footer-text pb-1">
+                    <img class="mx-1 mob-icon" src="../images/menu/icon-map.svg" alt="icon">
+                    Львів, вул Дорошенка 34
+                </li>
+                <li class="footer-text pt-1">
+                    <img class="mx-1 pb-1" src="../images/menu/icon-mail.svg" alt="icon">
+                    saporiditalia@gmail.com
+                </li>
+                <li class="footer-text pt-1">
+                    <img class="mx-1 pb-1" src="../images/menu/icon-phone.svg" alt="icon">
+                    043 4949 303
+                </li>
+            </ul>
+
+            <ul>
+                <li class="footer-text bold pt-3">
+                    Ми працюємо:
+                </li>
+                <li class="footer-text pt-1">
+                    Пн - Сб 9:00 - 23:00
+                </li>
+                <li class="footer-text pt-1">
+                    Нд 10:00 - 21:00
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/menu-js/carousel.js"></script>
+<script src="../js/menu-js/dao.js"></script>
+<script src="../js/menu-js/scroll.js"></script>
+<script src="../js/menu-js/navigation.js"></script>
+<script src="../js/menu-js/basket.js"></script>
+<script src="../js/menu-js/burger-menu.js"></script>
+
+</body>
+</html>

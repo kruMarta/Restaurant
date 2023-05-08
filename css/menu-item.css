@@ -1,0 +1,393 @@
+.main {
+    min-height: 450px;
+}
+
+.product-block {
+    margin-top: 20px;
+    padding: 0 60px 0 106px;
+    display: flex;
+}
+
+.big-img-container {
+    width: 40%;
+}
+
+.content-container {
+    padding-left: 40px;
+    width: 40%;
+}
+
+.small-img-container {
+    position: relative;
+    width: 20%;
+
+}
+
+.product-big-img {
+    width: 513px;
+    height: 513px;
+}
+
+.product-small-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 230px;
+    height: 230px;
+}
+
+.product-title {
+    margin-bottom: 30px;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    color: #313131;
+}
+
+.product-description {
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #313131;
+}
+
+.product-price {
+    margin: 24px 0 24px 0;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 47px;
+    color: #313131;
+}
+
+.product-btn {
+    all: unset;
+    width: 393px;
+    height: auto;
+    padding: 12px;
+    background-color: #E59500;
+    border-radius: 30px;
+
+}
+.product-btn-text {
+    all: unset;
+    color: #313131;
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.back-to-menu-container {
+    margin: 16px 0 0 24px;
+}
+
+.back-to-menu-text {
+    color: rgba(49, 49, 49, 0.7);
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    position: relative;
+}
+
+.back-to-menu-text::after {
+    content: ""; /* додаємо пустий контент */
+    position: absolute; /* розміщуємо після тексту */
+    bottom: -3px; /* розміщуємо лінію знизу */
+    left: 0; /* починаємо з лівого краю контейнера */
+    width: 100%;
+    height: 2px;
+    background-color: rgba(49, 49, 49, 0.7);
+}
+
+.weight {
+    color: #313131;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 47px;
+}
+
+.recommendation-text-container {
+    margin: 108px 0 68px;
+    text-align: center;
+
+    color: #313131;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.recommended-products {
+    margin-bottom: 160px;
+    padding: 0 155px 0 155px;
+    display: flex;
+}
+
+.product-block {
+    margin-top: 20px;
+    padding: 0 60px 0 106px;
+    display: flex;
+}
+
+.product-container {
+    width: 33.3%;
+    padding: 0 30px 0 30px;
+}
+
+.product-img {
+    position: relative;
+    width: 286px;
+    height: 284px;
+}
+
+.product-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/menu/more-photo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-img:hover::before {
+    opacity: 1;
+}
+
+.redirect-container {
+    margin: 0 0 160px 0;
+}
+
+.redirect-text {
+    color: #E55200;
+    font-family: 'Cakra-Normal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.rec-product-desc {
+    width: 281px;
+    margin: 33px 0 0 0;
+}
+
+.rec-product-title {
+    color: #2D3F2F;
+    font-family: 'Ruberoid-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.rec-product-price {
+    color: #313131;
+    font-family: 'Ruberoid-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.mob-recommended-products {
+    display: none;
+}
+.mob-product-main {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .product-main {
+        display: none;
+    }
+    .mob-product-main {
+        display: block;
+    }
+
+    .main {
+        min-height: 450px;
+        padding: 0;
+    }
+    .prod-block {
+        margin: 20px 0 0 0;
+        padding: 0 12px 0 15px;
+        display: flex;
+    }
+    .big-img-container {
+        padding: 0;
+        width: 55%;
+    }
+    .content-container {
+        padding-left: 5px;
+        width: 45%;
+    }
+    .product-big-img {
+        width: 180px;
+        height: 180px;
+    }
+    .small-img {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .product-small-img {
+        position: relative;
+        margin-top: 7px;
+        width: 100px;
+        height: 100px;
+    }
+    .product-title {
+        margin-bottom: 13px;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #313131;
+    }
+    .weight {
+        margin-top: 30px;
+        color: #313131;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .product-description {
+        margin-top: 40px;
+
+        color: #313131;
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-btn {
+        all: unset;
+        width: 242px;
+        height: auto;
+        margin-top: 44px;
+        padding: 4px;
+        background-color: #E59500;
+        border-radius: 30px;
+
+    }
+    .product-btn-text {
+        all: unset;
+        color: #313131;
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .arrow-add-to-basket {
+        width: 56px;
+    }
+    .back-to-menu-container {
+        margin: 6px 0 0 0;
+    }
+    .back-to-menu-text {
+        color: rgba(49, 49, 49, 0.7);
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        position: relative;
+    }
+    .back-to-menu-text::after {
+        content: ""; /* додаємо пустий контент */
+        position: absolute; /* розміщуємо після тексту */
+        bottom: -3px; /* розміщуємо лінію знизу */
+        left: 0; /* починаємо з лівого краю контейнера */
+        width: 100%;
+        height: 2px;
+        background-color: rgba(49, 49, 49, 0.7);
+    }
+
+    .recommendation-text-container {
+        margin: 50px 0 35px;
+        text-align: center;
+
+        color: #313131;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .recommended-products {
+        display: none;
+    }
+    .mob-recommended-products {
+        display: flex;
+        margin: 0 0 75px 0;
+        padding: 0 10px;
+    }
+    .product-block {
+        margin-top: 20px;
+        padding: 0 60px 0 60px;
+        display: flex;
+    }
+    .product-container {
+        width: 50%;
+        padding: 0 30px 0 30px;
+    }
+    .product-img {
+        position: relative;
+        width: 132px;
+        height: 132px;
+    }
+    .product-img::before {
+        content: "";
+    }
+    .product-img:hover::before {
+        opacity: 1;
+    }
+    .rec-product-desc {
+        width: 135px;
+        margin: 14px 0 0 0;
+    }
+    .rec-product-title {
+        color: #2D3F2F;
+        font-family: 'Ruberoid-Medium', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .rec-product-price {
+        color: #313131;
+        font-family: 'Ruberoid-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
