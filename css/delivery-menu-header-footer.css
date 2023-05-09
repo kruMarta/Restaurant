@@ -74,6 +74,10 @@ button {
     padding: 40px 0 40px 0;
 }
 
+.foo-col {
+    padding-top: 0;
+}
+
 .footer-text {
     color: #FFEFCD;
     font-family: 'Ruberoid-Regular', sans-serif;
@@ -154,7 +158,7 @@ button {
 
     .mobile-footer {
         display: block;
-        height: 180px;
+        height: 200px;
         background-color: #2D3F2F;
         padding: 25px 10px;
         font-family: 'Ruberoid-Medium', sans-serif;
@@ -192,6 +196,7 @@ button {
 
     .mob-c-3 {
         padding-left: 20px;
+        padding-right: 0;
     }
 
     .mob-icon {

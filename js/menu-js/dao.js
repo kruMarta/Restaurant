@@ -29,7 +29,7 @@ fetch('../products.json')
                                 <div class="col-4 text-end p-0"><span class="product-price">${product.price} ₴</span></div>
                             </div>
                             <button class="product-btn text-center" onclick="setProduct(${product.id});">
-                                <span class="product-btn-text">добавити в корзину </span>
+                                <span class="product-btn-text">додати в корзину </span>
                                 <img class="basket-arrow" src="../images/menu/long-arrow.svg" alt="longArrow">
                             </button>
                         </div>

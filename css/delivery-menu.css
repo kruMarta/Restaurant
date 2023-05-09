@@ -212,7 +212,9 @@
     line-height: 21px;
 }
 
-
+.product-btn:hover {
+    background-color: #c0800a;
+}
 
 .btn-arrow {
     all: unset;
@@ -339,6 +341,11 @@
         height: auto;
         overflow: hidden;
     }
+    .mob-carousel {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 
     .mob-pizza, .mob-pasta, .mob-salad, .mob-drink {
         margin-top: 15px;
@@ -368,7 +375,7 @@
         width: 140px;
         height: auto;
         padding: 0;
-        margin: 0 7px;
+        margin: 0 12px;
     }
 
     .product-desc {
@@ -417,7 +424,7 @@
     }
 
     .prev {
-        padding-left: 40px;
+        padding-left: 10px;
         display: none;
     }
     .prev.show {
@@ -450,6 +457,6 @@
     }
 
     .redirect-arrow {
-        width: 190px;
+        width: 200px;
     }
 }
