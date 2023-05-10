@@ -1,0 +1,667 @@
+@font-face{
+    font-family: "Ruberoid-Regular";
+    src: url("../fonts/Ruberoid-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Ruberoid-Medium";
+    src: url("../fonts/Ruberoid-Medium.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Cakra-Normal";
+    src: url("../fonts/Cakra-Normal.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "Moot jungle";
+    src: url("../fonts/mootjunglefreeversionregular-mv4rw.ttf") format("truetype");
+}
+
+:root {
+    --mainWheat: #FFEFCD;
+    --customOrange:#E59500;
+    --darkGreen: #2D3F2F;
+    --redishOrange: #E55200;
+}
+
+.mobile {
+    display: none;
+}
+
+.pc {
+    display: initial;
+}
+.navbar {
+    z-index: 55;
+}
+
+.overlay {
+    display: none;
+}
+
+.menu-block {
+    background-color: var(--mainWheat);
+    height: 4350px;
+    position: relative;
+}
+
+.nav-item a {
+    color: var(--darkGreen);
+    font-family: "Ruberoid-Regular";
+    font-size: 16px;
+    line-height: 21.49px;
+}
+
+.nav-item a:focus, .nav-item a:hover{
+    text-decoration: underline;
+    color: #1f2f21 !important;
+}
+
+.nav-item a:visited{
+    color: var(--darkGreen);
+}
+
+.header {
+    color: var(--darkGreen);
+    font-family: "Cakra-Normal";
+    font-size: 300px;
+    line-height: 300px;
+}
+
+#half-of-pizza {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+#menu-decoration {
+    width: 100%;
+}
+
+.dish {
+    position: absolute;
+    width: 40%;
+}
+
+.dish-description {
+    color: var(--darkGreen);
+    font-family: "Ruberoid-Regular";
+}
+
+.name, .price {
+    font-size: 24px;
+}
+
+.name {
+    font-family: "Ruberoid-Medium";
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dish h1 {
+    font-family: "Cakra-Normal";
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.first-dishes {
+    top: 22%;
+    left: 2%;
+}
+
+.name-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chefs {
+    top: 22%;
+    right: 5%;
+    width: 50%;
+}
+
+#chefs-text {
+    color: var(--mainWheat);
+    background-color: var(--customOrange);
+    width: 629px;
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.chefs .dish-description {
+    padding-left: 30px;
+}
+
+.chefs .dish-description:first-of-type div{
+    padding-top: 40px;
+}
+
+.pasta {
+    width: 45%;
+    top: 38%;
+    left: 2%;
+}
+
+.pizza {
+    top: 38%;
+    right: 5%;
+}
+
+.salads {
+    top: 57%;
+    left: 2%;
+}
+
+.deserts {
+    top: 57%;
+    right: 4%;
+}
+
+#deserts-text {
+    text-align: right;
+}
+
+.cold-drinks {
+    top: 72%;
+    left: 2%;
+}
+
+.hot-drinks {
+    top: 72%; 
+    right: 3%;
+}
+
+#drinks-text {
+    text-align: right;
+}
+
+.vine-text {
+    font-size: 200px;
+    color: var(--darkGreen);
+    font-family: "Cakra-Normal";
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 0;
+}
+
+#vine-1 {
+   left: 13%;
+}
+
+#vine-2 {
+    right: 13%;
+}
+
+#exclusive {
+    color: var(--darkGreen);
+    font-size: 40px;
+    position: absolute;
+    font-family: "Ruberoid-Regular";
+    bottom: 3%;
+    left: 42%;
+}
+
+.vines {
+    height: 4150px;
+    background-color: var(--mainWheat);
+    color: var(--darkGreen);
+}
+
+.vine-name {
+    font-family: "Moot jungle";
+    font-size: 96px;
+}
+
+.about-vine{
+    font-family: "Ruberoid-Regular";
+    font-size: 24px;
+}
+
+.vine {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.decs-images {
+    height: 70%;
+}
+
+.vines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--mainWheat);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logotype {
+    width: 240px;
+    height: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--darkGreen);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--customOrange);
+}
+
+footer * {
+    padding-top: 3%;
+    color: var(--darkGreen);
+    font-size: 18px;
+}
+
+.contact-info li{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .menu-block {
+        height: 3900px;
+    }
+
+    .header {
+        font-size: 100px;
+        line-height: 100px;
+        padding-top: 115px;
+        padding-left: 23px;
+    }
+
+    .navbar {
+        z-index: 55;
+    }
+
+    #burger-menu {
+        position: absolute;
+        right: 5%;
+        padding-top: 70px;
+        border: none;
+        color: var(--darkGreen);
+    }
+
+    .navbar-toggler-icon{
+        background-image: url(../images/burger.svg) !important;
+    }
+
+    .navbar-collapse { 
+        background-color: var(--darkGreen);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+    }
+
+    .overlay {
+        display: none;
+        z-index: 998;
+    }
+      
+    #ua-img {
+        position: absolute;
+        z-index: 999;
+        padding-top: 20px;
+        left: 5%;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 60px;
+        color: var(--mainWheat);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        z-index: 999;
+    }
+
+    .nav-item {
+        padding: 0 !important;
+        color: var(--mainWheat);
+    }
+
+    .nav-item a {
+        font-size: 18px;
+        padding: 0;
+        padding-left: 40px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        color: var(--mainWheat) !important;
+    }
+
+    .navbar-nav {
+        padding-top: 70px;
+        display: block;
+        padding-left: 15px;
+        padding-bottom: 45px;
+    }
+
+    .nav-item a:hover{
+        text-decoration: none;
+        color: var(--customOrange);
+    }
+    
+    .nav-item a:active{
+        color: var(--customOrange);
+    }
+    .navbar ul{
+        align-items: flex-start !important;
+    }
+
+    #half-of-pizza {
+        width: 200px;
+        height: 290px;
+    }
+
+    .dish h1 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    .name, .price {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .lines {
+        width: 100%;
+        position: absolute;
+    }
+
+    .dish {
+        width: 90%;
+        left: 5%;
+    }
+
+    .first-dishes {
+        top: 11%;
+    }
+
+    .chefs {
+        top: 22%;
+    }
+
+    #chefs-text{
+        width: 358px;
+        height: 73px;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    #line2 {
+        top: 21%;
+    }
+
+    .chefs .dish-description {
+        padding-left: 0;
+    }
+
+    #line3 {
+        width: 50%;
+        top: 32%;
+    }
+
+    .pasta {
+        top: 33%;
+    }
+
+    #line4 {
+        width: 50%;
+        top: 44%;
+        right: 0;
+    }
+
+    .pizza{
+        top: 45%;
+    }
+
+    #line5 {
+        top: 56%;
+    }
+
+    .salads {
+        top: 58%;
+    }
+
+    #line6 {
+        top: 67%;
+    }
+
+    .deserts {
+        top: 68%;
+    }
+    
+    #deserts-text {
+        text-align: left;
+    }
+    
+    #line7 {
+        top: 77%;
+        width: 50%;
+        right: 0;
+    }
+    .cold-drinks {
+        top: 78%;
+    }
+
+    #rectangle1 {
+        top: 87%;
+        height: 21px;
+        margin: auto;
+    }
+
+    #rectangle2 {
+        top: 96%;
+        height: 21px;
+        margin: auto;
+    }
+    
+    .hot-drinks {
+        top: 88%; 
+    }
+
+    .vine-text {
+        font-size: 60px;
+        top: 97%;
+    }
+    
+    #vine-1 {
+       left: 10%;
+    }
+    
+    #vine-2 {
+        right: 10%;
+    }
+    
+    #exclusive {
+        font-size: 16px;
+        left: 37%;
+        top: 97.5%;
+    }
+
+    #line8 {
+        top: 98%;
+        width: 180px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .vine-img {
+        transform: rotate(90deg);
+        width: 304px;
+        height: 82px;
+        position: absolute;
+        right: 41%;
+    }
+  
+    .vine-name {
+        font-size: 56px;
+    }
+
+    .about-vine {
+        font-size: 12px;
+    }
+
+    .decs-images {
+        width: 161px;
+        height: 50px;
+        position: absolute;
+        right: 18%;
+    }
+
+    .vine-description {
+        width: 56%;
+        position: absolute;
+        right: 5%;
+    }
+
+    .vines {
+        position: relative;
+        height: 1470px;
+    }
+
+    .vine {
+        padding-bottom: 300px;
+        padding-top: 15px;
+    }
+
+    #vines1 {
+        top: 7%;
+    }
+
+    #di-1 {
+        top: 11%;
+    }
+
+    #vines2 {
+        top: 29%;
+    }
+
+    #di-2 {
+        top: 33%;
+    }
+
+    #vines3 {
+        top: 50%;
+    }
+
+    #di-3 {
+        top: 55%;
+    }
+
+    #vines4 {
+        top: 72%;
+    }
+
+    #di-4 {
+        top: 76%;
+    }
+
+    .vine-name {
+        line-height: 47.04px;
+    }
+
+    #reservatio-btn {
+        position: absolute;
+        left: 0;
+        bottom: 8%;
+    }
+
+    #delivery-btn {
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+    }
+
+    footer {
+        height: 136px;
+        background-color: var(--mainWheat);
+    }
+
+    footer .logotype {
+        height: 53.46px;
+        width: 124.15px;
+        position: absolute;
+        left: 3%;
+    }
+
+    footer * {
+        font-size: 10px;
+        color: var(--darkGreen);
+    }
+
+    footer p:last-of-type {
+        position: absolute;
+        left: 6%;
+        bottom: 0;
+    } 
+
+    .contact-info *{
+        padding-top: 0;
+    }
+
+    .contact-info {
+        position: absolute;
+        right: 5%;
+    }
+
+    #working-time {
+        position: absolute;
+        bottom: 0;
+        right: 17%;
+    }
+
+    .quick-links {
+        position: absolute;
+        left: 30%; 
+    }
+}
