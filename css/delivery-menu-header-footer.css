@@ -108,7 +108,6 @@ button {
     .overlay {
         display: none;
         width: 100%;
-        max-width: 100vw;
         height: 333px;
         position: fixed;
         background-color: #2D3F2F;
