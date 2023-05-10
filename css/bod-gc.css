@@ -1,0 +1,12 @@
+
+
+.m-second-img-container {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .d-second-img-container {
+        display: none;
+    }
+
+}
