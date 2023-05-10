@@ -3,6 +3,7 @@ const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close-btn');
 
 navbarCollapse.addEventListener('shown.bs.collapse', function() {
+  console.log("block");
   overlay.style.display = 'block';
   let translateButton = document.getElementById('ua-img');
   let currentSrc = translateButton.src;
